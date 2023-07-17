@@ -4,11 +4,11 @@ export default function Welcome({ auth }) {
     return (
         <>
             <Head title="Welcome" />
-            <nav className="bg-black sticky top-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-black">
+            <nav className="bg-white sticky top-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-black">
                 <div className="container mx-auto px-6 py-4">
                     <div className="flex items-center justify-between">
                         <div className="flex items-center">
-                            <h1 className="text-white text-xl font-bold md:text-2xl">
+                            <h1 className="text-black text-xl font-bold md:text-2xl">
                                 Chirper
                             </h1>
                         </div>
@@ -16,7 +16,7 @@ export default function Welcome({ auth }) {
                             {auth.user ? (
                                 <Link
                                     href={route("dashboard")}
-                                    className="text-white hover:text-gray-100 px-3 py-2 rounded-md text-sm font-medium"
+                                    className="text-black hover:text-gray-700 px-3 py-2 rounded-md text-sm font-medium"
                                 >
                                     Dashboard
                                 </Link>
@@ -24,14 +24,14 @@ export default function Welcome({ auth }) {
                                 <>
                                     <Link
                                         href={route("login")}
-                                        className="text-white hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+                                        className="text-black hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         Log in
                                     </Link>
 
                                     <Link
                                         href={route("register")}
-                                        className="text-white hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium"
+                                        className="text-black hover:text-gray-500 px-3 py-2 rounded-md text-sm font-medium"
                                     >
                                         Register
                                     </Link>
